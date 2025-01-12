@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(11, 11, 11);
+  }
+  
+  #game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  input, button {
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  .grid {
+    display: grid;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .box {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #3a3a3a;
+    border-radius: 2px;
+  }
+  
+  .animated {
+    transition: background-color 0.5s, color 0.5s;
+  }
+  
+  .right {
+    background-color: green;
+    color: white;
+  }
+  
+.wrong {
+    background-color: yellow;
+    color: black;
+  }
+  
+.empty {
+    background-color: gray;
+    color: white;
+  }
+
+#logOut button{
+    padding: 10px 117px;
+    background-color: #ff7f01;
+    border-width: 0px;
+    color: white;
+    border-radius: 10px;
+    font-weight: 600;
+    align-self: center;
+  }
+
+#login-form{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+    background-color: white;
+    padding: 30px;
+    width: 400px;
+    border-radius: 10px;
+  }
+
+#login-form p{
+  margin: 0px 0px;
+  font-weight: bold;
+
+}
+
+#login-form input{
+  margin: 0px 0px;
+  background-color: rgb(214, 214, 214);
+  border-radius: 7px;
+  border-width: 0;
+
+}
+#login-form h1{
+  color: #ff7f01;
+  margin: 0px 0px 10px 0px;
+}
+
+#login-form button{
+  background-color: #ff7f01;
+  border-radius: 7px;
+  border-width: 0;
+  font-size: 1.2rem;
+  color: white;
+
+}
+
+body h1{
+  color: white;
+}
+
+/* Animasi untuk kotak yang menerima huruf */
+@keyframes letterAppear {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  margin: 5px;
+  transition: background-color 0.3s;
+}
+
+.letter-appear {
+  animation: letterAppear 0.3s ease forwards;
+}
+
+
+
+
+
+
+
+  
